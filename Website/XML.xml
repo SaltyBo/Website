@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="XML-styles.css"?>
+<xml-rules>
+	<title>
+		XML Syntax rules
+	</title>
+	<title2>
+		6 important rules that must be adhered to in order to create a valid XML file:
+	</title2>
+	<rule>
+		<heading>
+			XML Documents Must Have a Root Element
+		</heading>
+		<description>
+			XML documents must contain one root element that is the parent of all other elements.
+		</description>
+		<example>
+			&lt;root&gt;
+			&lt;child&gt;
+			&lt;subchild&gt;.....&lt;/subchild&gt;
+			&lt;/child&gt;
+			&lt;/root&gt;
+		</example>
+	</rule>
+	<rule>
+		<heading>
+			The XML Prolog
+		</heading>
+		<description>
+			The XML prolog is optional. If it exists, it must come first in the document.
+		</description>
+		<example>
+			&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+		</example>
+	</rule>
+	<rule>
+		<heading>
+			All XML Elements Must Have a Closing Tag
+		</heading>
+		<description>
+			In XML, it is illegal to omit the closing tag. All elements must have a closing tag.
+		</description>
+		<example>
+			&lt;p&gt;This is a paragraph.&lt;/p&gt;
+		</example>
+	</rule>
+	<rule>
+		<heading>
+			XML Tags are Case Sensitive
+		</heading>
+		<description>
+			XML tags are case sensitive. The tag &lt;Letter&gt; is different from the tag &lt;letter&gt;.
+		</description>
+		<example>
+			&lt;message&gt;This is correct&lt;/message&gt;
+		</example>
+	</rule>
+	<rule>
+		<heading>
+			XML Elements Must be Properly Nested
+		</heading>
+		<description>
+			In XML, all elements must be properly nested within each other.
+		</description>
+		<example>
+			&lt;b&gt;&lt;i&gt;This text is bold and italic&lt;/i&gt;&lt;/b&gt;
+		</example>
+	</rule>
+	<rule>
+		<heading>
+			XML Attribute Values Must Always be Quoted
+		</heading>
+		<description>
+			XML elements can have attributes in name/value pairs just like in HTML. In XML, the attribute values must always be quoted.
+		</description>
+		<example>
+			&lt;note date="12/11/2007"&gt;
+			&lt;to&gt;Tove&lt;/to&gt;
+			&lt;from&gt;Jani&lt;/from&gt;
+			&lt;/note&gt;
+		</example>
+	</rule>
+</xml-rules>
